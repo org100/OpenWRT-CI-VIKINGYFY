@@ -66,19 +66,14 @@ done
 provided_config_lines=(
     "CONFIG_PACKAGE_cpufreq=y"
     "CONFIG_PACKAGE_luci-app-cpufreq=y"
-    "CONFIG_PACKAGE_luci-i18n-cpufreq-zh-cn=y"
     "CONFIG_PACKAGE_luci-app-ttyd=y"
-    "CONFIG_PACKAGE_luci-i18n-ttyd-zh-cn=y"
-    "CONFIG_PACKAGE_ttyd=y"
     "CONFIG_PACKAGE_luci-app-homeproxy=y"
-    "CONFIG_PACKAGE_luci-i18n-homeproxy-zh-cn=y"
     "CONFIG_PACKAGE_luci-app-alist=y"
-    "CONFIG_PACKAGE_luci-i18n-alist-zh-cn=y"
     "CONFIG_PACKAGE_luci-app-mosdns=y"
-    "CONFIG_PACKAGE_luci-i18n-mosdns-zh-cn=y"
     "CONFIG_PACKAGE_lucky=y"
     "CONFIG_PACKAGE_luci-app-lucky=y"
-    "CONFIG_PACKAGE_luci-i18n-lucky-zh-cn=y"
+    "CONFIG_PACKAGE_luci-app-upnp"
+    "CONFIG_PACKAGE_luci-app-aria2=y"
 )
 
 [[ $WRT_TARGET == *"WIFI-NO"* ]] && provided_config_lines+=("CONFIG_PACKAGE_hostapd-common=n" "CONFIG_PACKAGE_wpad-openssl=n")
