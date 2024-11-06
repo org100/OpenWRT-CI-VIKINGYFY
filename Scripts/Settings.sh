@@ -53,10 +53,10 @@ keywords_to_delete=(
     "xiaomi_ax3600" "xiaomi_ax9000" "xiaomi_ax1800" "glinet" "cmiot_ax18" "qihoo_v6" "redmi_ax5"
     "mr7350" "uugamebooster" "luci-app-wol" "luci-i18n-wol-zh-cn" "CONFIG_TARGET_INITRAMFS" "ddns" "tailscale" "luci-app-advancedplus"
 )
-
+[[ $WRT_TARGET == *"MEDIATEK"* ]] && keywords_to_delete+=("cmcc_rax3000m-emmc")
 [[ $WRT_TARGET == *"WIFI-NO"* ]] && keywords_to_delete+=("usb" "wpad" "hostapd")
 [[ $WRT_TARGET != *"EMMC"* ]] && keywords_to_delete+=("samba" "autosamba" "jdcloud_ax1800-pro" "jdcloud_ax6600")
-[[ $WRT_TARGET == *"EMMC"* ]] && keywords_to_delete+=("jdcloud_ax1800-pro" "jdcloud_ax6600")
+[[ $WRT_TARGET == *"EMMC"* ]] && keywords_to_delete+=("cmiot_ax18" "qihoo_v6" "redmi_ax5=y" "zn_m2")
 
 for keyword in "${keywords_to_delete[@]}"; do
     sed -i "/$keyword/d" ./.config
