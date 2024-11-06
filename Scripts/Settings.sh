@@ -70,7 +70,7 @@ provided_config_lines=(
     "CONFIG_PACKAGE_luci-app-alist=y"
     "CONFIG_PACKAGE_luci-app-mosdns=y"
     "CONFIG_PACKAGE_luci-app-lucky=y"
-    "CONFIG_PACKAGE_luci-app-upnp"
+    "CONFIG_PACKAGE_luci-app-upnp=y"
     "CONFIG_PACKAGE_luci-app-aria2=y"
 )
 
