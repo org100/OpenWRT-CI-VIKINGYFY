@@ -6,7 +6,6 @@ UPDATE_PACKAGE() {
 	local PKG_REPO=$2
 	local PKG_BRANCH=$3
 	local PKG_SPECIAL=$4
-        local PKG_SPECIAL=${4:-} 
 	local REPO_NAME=$(echo $PKG_REPO | cut -d '/' -f 2)
 
 	rm -rf $(find ../feeds/luci/ ../feeds/packages/ -maxdepth 3 -type d -iname "*$PKG_NAME*" -prune)
