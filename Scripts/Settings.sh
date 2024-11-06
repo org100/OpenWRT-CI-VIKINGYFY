@@ -64,7 +64,6 @@ done
 
 # Configuration lines to append to .config
 provided_config_lines=(
-    "CONFIG_PACKAGE_cpufreq=y"
     "CONFIG_PACKAGE_luci-app-cpufreq=y"
     "CONFIG_PACKAGE_luci-app-ttyd=y"
     "CONFIG_PACKAGE_luci-app-homeproxy=y"
