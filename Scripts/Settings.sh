@@ -55,7 +55,7 @@ keywords_to_delete=(
 )
 [[ $WRT_TARGET == *"MEDIATEK"* ]] && keywords_to_delete+=("abt_asr3000" "abt_asr3000" "cetron_ct3003" "cmcc_a10" "cmcc_rax3000m-nand" "h3c_magic-nx30" "imou_lc-hx300" "jcg_q30" "jdcloud_re-cp-03" "netcore_n60" "nokia_ea0326gmp" "qihoo_360t7" "xiaomi_mi-router-ax3000t" "xiaomi_mi-router-wr30u" "xiaomi_redmi-router-ax6000" "zyxel_ex5700-telenor")
 [[ $WRT_TARGET == *"WIFI-NO"* ]] && keywords_to_delete+=("wpad" "hostapd")
-[[ $WRT_TARGET != *"EMMC"* ]] && keywords_to_delete+=()
+[[ $WRT_TARGET != *"EMMC"* ]] && keywords_to_delete+=("samba" "autosamba")
 [[ $WRT_TARGET == *"EMMC"* ]] && keywords_to_delete+=("zn_m2")
 
 for keyword in "${keywords_to_delete[@]}"; do
