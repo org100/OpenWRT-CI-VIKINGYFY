@@ -72,8 +72,8 @@ provided_config_lines=(
     "CONFIG_PACKAGE_luci-app-lucky=y"
     "CONFIG_PACKAGE_luci-app-upnp=y"
     "CONFIG_PACKAGE_luci-app-aria2=y"
-    "CONFIG_PACKAGE_luci-app-wolplus"
-    "CONFIG_PACKAGE_luci-app-samba4"
+    "CONFIG_PACKAGE_luci-app-wolplus=y"
+    "CONFIG_PACKAGE_luci-app-samba4=y"
 )
 
 [[ $WRT_TARGET == *"WIFI-NO"* ]] && provided_config_lines+=("CONFIG_PACKAGE_hostapd-common=n" "CONFIG_PACKAGE_wpad-openssl=n")
