@@ -79,11 +79,6 @@ provided_config_lines=(
 [[ $WRT_TARGET == *"WIFI-NO"* ]] && provided_config_lines+=("CONFIG_PACKAGE_hostapd-common=n" "CONFIG_PACKAGE_wpad-openssl=n")
 [[ $WRT_TARGET == *"EMMC"* ]] && provided_config_lines+=(
     "CONFIG_PACKAGE_luci-app-diskman=y"
-    "CONFIG_PACKAGE_luci-i18n-diskman-zh-cn=y"
-    "CONFIG_PACKAGE_luci-app-docker=y"
-    "CONFIG_PACKAGE_luci-i18n-docker-zh-cn=y"
-    "CONFIG_PACKAGE_luci-app-dockerman=y"
-    "CONFIG_PACKAGE_luci-i18n-dockerman-zh-cn=y"
 )
 
 # Append configuration lines to .config
