@@ -37,8 +37,8 @@ fi
 #DIY
 #######################################
 WRT_IP="192.168.1.1"
-WRT_NAME="FWRT"
-WRT_WIFI="FWRT"
+WRT_NAME="ZWRT"
+WRT_WIFI="ZWRT"
 #修改immortalwrt.lan关联IP
 sed -i "s/192\.168\.[0-9]*\.[0-9]*/$WRT_IP/g" $(find ./feeds/luci/modules/luci-mod-system/ -type f -name "flash.js")
 #修改默认WIFI名
