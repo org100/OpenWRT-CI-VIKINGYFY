@@ -48,6 +48,7 @@ UPDATE_PACKAGE "luci-app-tailscale" "asvow/luci-app-tailscale" "main"
 UPDATE_PACKAGE "luci-app-lucky" "gdy666/luci-app-lucky" "main"
 UPDATE_PACKAGE "homeproxy" "bulianglin/homeproxy" "master"
 UPDATE_PACKAGE "luci-app-ddns-go" "sirpdboy/luci-app-ddns-go" "main"
+UPDATE_PACKAGE "luci-app-diskman" "lisaac/luci-app-diskman" "master"
 #UPDATE_PACKAGE "luci-app-alist" "sbwml/luci-app-alist" "main"
 
 if [[ $WRT_REPO != *"immortalwrt"* ]]; then
